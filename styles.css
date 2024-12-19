@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #f4f4f4;
+  }
+  
+  /* Canvas Wall */
+  #wall-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #wall {
+    display: block;
+    background: #e0e0e0 url('brick-pattern.png') repeat; /* Add a brick wall background */
+    cursor: crosshair;
+  }
+  
+  /* Toolbar */
+  #toolbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  #toolbar input[type="color"], 
+  #toolbar select, 
+  #toolbar button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  #toolbar button {
+    cursor: pointer;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  #toolbar button:hover {
+    background-color: #d9534f;
+  }
+  
